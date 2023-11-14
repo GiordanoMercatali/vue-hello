@@ -17,8 +17,18 @@
 
         <main>
             <div id="app">
-                <h1>{{ message }}</h1>
-                <img :src= "image" alt="">
+                <h1>{{ imgClass === "border" ? "BORDO" : message }}</h1>
+                <img :src= "image" :class="imgClass" alt="">
+                <button @click="addBorder">Add Border</button>
+                
+                <!-- <div class="square" :class="[squareRounded === true ? 'rounded' : '', squareBlue === true ? 'blue' : 'green']"></div> -->
+                
+                <!-- Object notation for class binding -->
+                <div class="square" :class="{'rounded': squareRounded, 'blue': squareBlue === true, 'green': squareBlue === false}"></div>
+
+
+                <button @click="makeRounded">Make Rounded</button>
+                <button @click="changeColor">Change Color</button>
             </div>
         </main>
 

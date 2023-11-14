@@ -1,6 +1,6 @@
 /*Custom properties*/
 :root{
-    --bg-color: rgb(62, 75, 157);
+    --bg-color: rgb(255, 255, 255);
     --primary-color: black;
 }
 
@@ -10,4 +10,26 @@
     padding: 0;
     box-sizing: border-box;
     background-color: var(--bg-color);
+}
+
+.border{
+    border: 2px dotted rgb(199, 38, 199);
+}
+
+.square{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.rounded{
+    border-radius: 100%;
 }
